@@ -15,6 +15,24 @@
     main {
       flex: 1;
     }
+    .hero {
+  background: url('images/hero-bg.jpg') no-repeat center center/cover;
+  height: 100vh; /* full screen */
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
   </style>
 </head>
 <body>
@@ -40,13 +58,14 @@
 
 <!-- Main content -->
 <main>
-  <section class="bg-light text-center py-5">
-    <div class="container">
-      <h1 class="display-4 fw-bold">AI & Automation Training for Future Innovators</h1>
-      <p class="lead">Empowering school and college students with hands-on training in AI tools, n8n automation, and future-ready skills.</p>
-      <a href="workshops.html" class="btn btn-primary btn-lg">Join Our Next Workshop</a>
-    </div>
-  </section>
+  <!-- Hero Section with Background Image -->
+<section class="hero d-flex align-items-center text-center text-white">
+  <div class="container">
+    <h1 class="display-4 fw-bold">AI & Automation Training for Future Innovators</h1>
+    <p class="lead">Empowering school and college students with hands-on training in AI tools, n8n automation, and future-ready skills.</p>
+    <a href="workshops.html" class="btn btn-primary btn-lg">Join Our Next Workshop</a>
+  </div>
+</section>
 
   <section class="py-5 container">
     <h2 class="text-center mb-4">Why Learn with Nextoria?</h2>
