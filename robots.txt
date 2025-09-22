@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://nextoriatrainings.github.io/workshop/sitemap.xml
